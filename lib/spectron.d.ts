@@ -6,9 +6,10 @@
 
 declare module "spectron" {
     import * as Electron from "electron";
+    import * as Webdriver from "webdriver";
     import * as WebdriverIO from "webdriverio";
 
-    export interface SpectronClient extends WebdriverIO.Client<void> {
+    export interface SpectronClient extends Webdriver.Client<void> {
         /**
          * Wait until the window is no longer loading.
          * Takes an optional timeout in milliseconds that defaults to 5000.
@@ -38,7 +39,7 @@ declare module "spectron" {
          * Gets the console log output from the render process.
          * The logs are cleared after they are returned.
          */
-        getRenderProcessLogs():Promise<WebdriverIO.LogEntry[]>;
+        getRenderProcessLogs():Promise<object[]>;
         /**
          * Gets the console log output from the main process.
          * The logs are cleared after they are returned.

@@ -29,10 +29,9 @@
     "electron-chromedriver": "~3.0.0",
     "request": "^2.87.0",
     "split": "^1.0.0",
-    "webdriverio": "^4.13.0"
+    "webdriverio": "^5.4.14"
   },
   "devDependencies": {
-    "@types/webdriverio": "^4.8.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
     "chai-roughly": "^1.0.0",
